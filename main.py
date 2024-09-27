@@ -66,7 +66,7 @@ bot = Client("bot",
              bot_token=os.environ.get("BOT_TOKEN"),
              api_id=int(os.environ.get("API_ID")),
              api_hash=os.environ.get("API_HASH"))
-auth_users = [6981453498,5318243282,5987970971,6061552289]
+auth_users = [6981453498,5318243282,5987970971,6061552289,5660459302]
 sudo_users = auth_users
 sudo_groups = [-1001911553062]
 
@@ -129,7 +129,7 @@ keyboard = InlineKeyboardMarkup(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT  [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /TIGER")
+    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT  [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /yogesh")
 
 
 @bot.on_message(filters.command("STOP"))
